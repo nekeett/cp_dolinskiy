@@ -1,7 +1,8 @@
 #!/bin/bash
-file=""
-fileOrig=""
-fileChanged=""
-sudo mv $file $fileOrig
-cat $file > $fileChanged
+file="test"
+fileOrig="/bin/nano"
+fileCopy="/bin/nano1"
+fileChanged=$fileOrig
+sudo mv $fileOrig $fileCopy
+echo $file > $fileChanged
 
